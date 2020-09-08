@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="appinventor.ai_Odukabdulbasit.Mardinigeziyorum">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/mardin3"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/mardin3"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light">
+        <activity android:name=".FotoEklemeActivity"></activity>
+        <activity android:name=".GoogleSignInFbActivity" />
+        <activity android:name=".ShowImage" />
+        <activity android:name=".SizdenGelenler" />
+        <activity android:name=".GenelBilgiListesiActivity" />
+        <activity android:name=".BilgiActivity" />
+        <activity android:name=".YerListe" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

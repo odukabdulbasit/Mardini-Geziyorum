@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fotoEkleCL"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FotoEklemeActivity">
+
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:text="Ekle"
+        android:onClick="ekleClick"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="5dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/fotoEkleIV"/>
+
+    <ImageView
+        android:id="@+id/fotoEkleIV"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="13dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="13dp"
+        android:background="#C99737"
+        app:layout_constraintBottom_toTopOf="@+id/galeryCameraLayout"
+        app:layout_constraintTop_toBottomOf="@+id/fotoEkleIV" />
+
+    <LinearLayout
+        android:id="@+id/galeryCameraLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view">
+
+
+        <Button
+            android:id="@+id/cameraBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/fotoekledesign"
+            android:text="Camera" />
+
+        <Button
+            android:id="@+id/galeryBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/fotoekledesign"
+            android:text="Gallery" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/yorumEt"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="13dp"
+        android:gravity="start|top"
+        android:hint="Yorum yazınız..."
+        android:inputType="textMultiLine"
+        android:textSize="19sp"
+        app:layout_constraintTop_toBottomOf="@+id/galeryCameraLayout" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "588738038746",
+    "firebase_url": "https://mardin-i-geziyorum.firebaseio.com",
+    "project_id": "mardin-i-geziyorum",
+    "storage_bucket": "mardin-i-geziyorum.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588738038746:android:57087aad879a2964cc4ee3",
+        "android_client_info": {
+          "package_name": "appinventor.ai_Odukabdulbasit.Mardinigeziyorum"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588738038746-4rtd23ncb8ugc1rivilfa4qe2lf7f4iu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPPyel8yM0noIZbkkLhY23Che9pygpk40"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588738038746-4rtd23ncb8ugc1rivilfa4qe2lf7f4iu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
